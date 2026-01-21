@@ -173,13 +173,9 @@ function controls() {
     sousedipocetpotrebazrozeni.style.marginTop = "10px";
     sousedipocetpotrebazrozeni.style.width = "60px";
     sousedipocetpotrebazrozeni.addEventListener("input", () => {
-        if (sousedipocetpotrebazrozeni.value < 3){
-            sousedipocetpotrebazrozeni.value = 3;
-            minpocetsouseduprozrozeni = parseInt(sousedipocetpotrebazrozeni.value);
-        }
-        else{
+       
         minpocetsouseduprozrozeni = parseInt(sousedipocetpotrebazrozeni.value);
-        }
+        
     });
 
     let maxsousedipocetpotrebalabelprozaniknuti = controlsdiv.appendChild(document.createElement("label"));
@@ -199,13 +195,7 @@ function controls() {
     maxsousedipocetpotrebaprozaniknuti.style.width = "60px";
 
     maxsousedipocetpotrebaprozaniknuti.addEventListener("input", () => {
-        if (maxsousedipocetpotrebaprozaniknuti.value < 3){
-            maxsousedipocetpotrebaprozaniknuti.value = 3;
-           maxpocetsouseduprozaniknuti = parseInt(maxsousedipocetpotrebaprozaniknuti.value);
-        }
-        else{
         maxpocetsouseduprozaniknuti = parseInt(maxsousedipocetpotrebaprozaniknuti.value);
-        }
     });
     
     let minsousedipocetpotrebalabelprozaniknuti = controlsdiv.appendChild(document.createElement("label"));
@@ -225,13 +215,9 @@ function controls() {
     minsousedipocetpotrebaprozaniknuti.style.width = "60px";
 
     minsousedipocetpotrebaprozaniknuti.addEventListener("input", () => {
-        if (minsousedipocetpotrebaprozaniknuti.value < 2){
-            minsousedipocetpotrebaprozaniknuti.value = 2;
-           minpocetsouseduprozaniknuti = parseInt(minsousedipocetpotrebaprozaniknuti.value);
-        }
-        else{
+        
         minpocetsouseduprozaniknuti = parseInt(minsousedipocetpotrebaprozaniknuti.value);
-        }
+        
     });
     
     let minpocetproprelabel = controlsdiv.appendChild(document.createElement("label"));
@@ -250,13 +236,9 @@ function controls() {
     minpocetpropre.style.marginTop = "10px";
     minpocetpropre.style.width = "60px";
     minpocetpropre.addEventListener("input", () => {
-        if (minpocetpropre.value < 2){
-            minpocetpropre.value = 2;
-            minpocpropre = parseInt(minpocetpropre.value);
-        }
-        else{
+      
         minpocpropre = parseInt(minpocetpropre.value);
-        }
+        
     });
 
     let maxpocetproprelabel = controlsdiv.appendChild(document.createElement("label"));
@@ -275,13 +257,9 @@ function controls() {
     maxpocetpropre.style.marginTop = "10px";
     maxpocetpropre.style.width = "60px";
     maxpocetpropre.addEventListener("input", () => {
-        if (maxpocetpropre.value < 3){
-            maxpocetpropre.value = 3;
-            maxpocpropre = parseInt(maxpocetpropre.value);
-        }
-        else{
+        
         maxpocpropre = parseInt(maxpocetpropre.value);
-        }
+        
     }); 
     let inputfields = document.querySelectorAll(".inputfield");
     inputfields.forEach(field => {

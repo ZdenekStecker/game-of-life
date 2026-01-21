@@ -5,11 +5,11 @@ let playing = false;
 
 let timer;
 let reproductionTime = 100;
-let minpocetsouseduprozrozeni = 3;
-let maxpocetsouseduprozaniknuti = 3;
-let minpocetsouseduprozaniknuti = 2;
-let minpocpropre = 2;
-let maxpocpropre = 3;
+let minpocetsouseduprozrozeni = 0;
+let maxpocetsouseduprozaniknuti = 0;
+let minpocetsouseduprozaniknuti = 0;
+let minpocpropre = 0;
+let maxpocpropre = 0;
 
 let grid = new Array(rows);
 let nextGrid = new Array(rows);
@@ -327,7 +327,7 @@ function setupControlButtons() {
         for (let i = 0; i < rows; i++) {
             for (let j = 0; j < cols; j++) {
                 grid[i][j] = Math.floor(Math.random() * 2);
-                var cell = document.getElementById(i + '_' + j);
+                let cell = document.getElementById(i + '_' + j);
                 if (grid[i][j] == 1) cell.setAttribute('class', 'live');
                 else cell.setAttribute('class', 'dead');
             }
